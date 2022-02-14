@@ -183,7 +183,7 @@ geographic proximity:
 """
 
 # ╔═╡ a2fad4bc-66fa-4466-ae29-b495590f035f
-load("/Users/hassanalsawadi/Downloads/geocluster.png")
+load("output.png")
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
