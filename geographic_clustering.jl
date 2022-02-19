@@ -17,6 +17,9 @@ begin
 	using LinearAlgebra
 end
 
+# ╔═╡ d44f3f70-705b-43a2-85c0-a441e08fbbe6
+load("Pydata_Jeddah_tweet_logo-05.png")
+
 # ╔═╡ a12d1135-ce89-414c-866e-14b4415e1990
 md"""
 # Geographical Clustering of Saudi Cities With Additional Constraint
@@ -28,7 +31,7 @@ md"""
 md"""
 #### Intializing packages
 
-_When running this notebook for the first time, this could take up to 15 minutes. Hang in there!_
+_When running this notebook for the first time, this could take up to 5 minutes. Hang in there!_
 """
 
 # ╔═╡ 2877f488-1ab3-46da-8a49-7db65c3d8a45
@@ -111,8 +114,6 @@ the variance between the group populations will be higher.
 begin
 	α = -2_500_000
 	β = 2_500_000
-	# α = -2_5000
-	# β = 2_5000
 	for i in 1:k
 	    @constraint(model, (x' * cities.population)[i] - P <= β)
 	    @constraint(model, (x' * cities.population)[i] - P >= α)
@@ -295,9 +296,9 @@ version = "0.6000.300+0"
 
 [[ChainRulesCore]]
 deps = ["Compat", "LinearAlgebra", "SparseArrays"]
-git-tree-sha1 = "f9982ef575e19b0e5c7a98c6e75ee496c0f73a93"
+git-tree-sha1 = "7dd38532a1115a215de51775f9891f0f3e1bac6a"
 uuid = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
-version = "1.12.0"
+version = "1.12.1"
 
 [[ChangesOfVariables]]
 deps = ["ChainRulesCore", "LinearAlgebra", "Test"]
@@ -406,9 +407,9 @@ version = "1.0.3"
 
 [[DiffRules]]
 deps = ["IrrationalConstants", "LogExpFunctions", "NaNMath", "Random", "SpecialFunctions"]
-git-tree-sha1 = "84083a5136b6abf426174a58325ffd159dd6d94f"
+git-tree-sha1 = "dd933c4ef7b4c270aacd4eb88fa64c147492acf0"
 uuid = "b552c78f-8df3-52c6-915a-8e097449b14b"
-version = "1.9.1"
+version = "1.10.0"
 
 [[Distances]]
 deps = ["LinearAlgebra", "SparseArrays", "Statistics", "StatsAPI"]
@@ -637,9 +638,9 @@ uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
 
 [[MathOptInterface]]
 deps = ["BenchmarkTools", "CodecBzip2", "CodecZlib", "JSON", "LinearAlgebra", "MutableArithmetics", "OrderedCollections", "Printf", "SparseArrays", "Test", "Unicode"]
-git-tree-sha1 = "625f78c57a263e943f525d3860f30e4d200124ab"
+git-tree-sha1 = "e8c9653877adcf8f3e7382985e535bb37b083598"
 uuid = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
-version = "0.10.8"
+version = "0.10.9"
 
 [[MbedTLS_jll]]
 deps = ["Artifacts", "Libdl"]
@@ -862,18 +863,19 @@ version = "0.1.1"
 
 [[StaticArrays]]
 deps = ["LinearAlgebra", "Random", "Statistics"]
-git-tree-sha1 = "a635a9333989a094bddc9f940c04c549cd66afcf"
+git-tree-sha1 = "95c6a5d0e8c69555842fc4a927fc485040ccc31c"
 uuid = "90137ffa-7385-5640-81b9-e52037218182"
-version = "1.3.4"
+version = "1.3.5"
 
 [[Statistics]]
 deps = ["LinearAlgebra", "SparseArrays"]
 uuid = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 
 [[StatsAPI]]
-git-tree-sha1 = "d88665adc9bcf45903013af0982e2fd05ae3d0a6"
+deps = ["LinearAlgebra"]
+git-tree-sha1 = "c3d8ba7f3fa0625b062b82853a7d5229cb728b6b"
 uuid = "82ae8749-77ed-4fe6-ae5f-f523153014b0"
-version = "1.2.0"
+version = "1.2.1"
 
 [[TOML]]
 deps = ["Dates"]
@@ -950,6 +952,7 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 """
 
 # ╔═╡ Cell order:
+# ╟─d44f3f70-705b-43a2-85c0-a441e08fbbe6
 # ╟─a12d1135-ce89-414c-866e-14b4415e1990
 # ╟─d35c109a-e5b6-4c01-a9c2-333b883783f2
 # ╠═2d6d0588-f4e4-4cad-8353-9c0ba020fec6
@@ -962,7 +965,7 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╟─54082ac4-c31d-4d27-9cc3-5248018c6838
 # ╠═6bc42cc7-e3d4-4470-bece-6af950280372
 # ╟─a5f3abe7-a843-4ea5-8e77-dfd075b243a5
-# ╠═ee41a6b3-fb13-4269-ab22-ad2a85bf26e5
+# ╟─ee41a6b3-fb13-4269-ab22-ad2a85bf26e5
 # ╟─dd262e8b-4697-4aa7-9bc7-a32ac25c96dc
 # ╠═d5fc7ca7-33cd-4f8a-aecf-8897bcd40e15
 # ╟─4ab84877-f5d8-4c1b-b0d2-346f0048bb20
