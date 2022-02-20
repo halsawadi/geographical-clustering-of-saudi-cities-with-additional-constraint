@@ -18,7 +18,7 @@ begin
 end
 
 # ╔═╡ d44f3f70-705b-43a2-85c0-a441e08fbbe6
-load("Pydata_Jeddah_tweet_logo-05.png")
+load("Pydata_Jeddah_22_new-06.png")
 
 # ╔═╡ a12d1135-ce89-414c-866e-14b4415e1990
 md"""
